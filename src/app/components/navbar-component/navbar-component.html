@@ -1,0 +1,7 @@
+<ul class="menu menu-horizontal bg-base-200 my-2 rounded-box">
+  @for (route of routes; track route.path) {
+    <li>
+      <a class="text-xl font-semibold" routerLinkActive="text-accent" [routerLink]="route.path">{{ route.title }}</a>
+    </li>
+  }
+</ul>

@@ -1,0 +1,23 @@
+
+<section class="mx-10">
+  <h1 class="text-2xl font-semibold">Pipes Numericos</h1>
+</section>
+<div class="stats stats-vertical lg:stats-horizontal shadow">
+  <div class="stat">
+    <div class="stat-title">Number</div>
+    <div class="stat-value">{{totalSells() | number}}</div>
+    <div class="stat-desc">Jan 1st - Feb 1st</div>
+  </div>
+
+  <div class="stat">
+    <div class="stat-title">Percentage</div>
+    <div class="stat-value">{{percent() | percent}}</div>
+    <div class="stat-desc">↗︎ 400 (22%)</div>
+  </div>
+
+  <div class="stat">
+    <div class="stat-title">Currency</div>
+    <div class="stat-value">{{totalSells() | currency}}</div>
+    <div class="stat-desc">↘︎ 90 (14%)</div>
+  </div>
+</div>

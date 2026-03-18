@@ -1,0 +1,43 @@
+<section class="mx-10">
+  <h1 class="text-2xl font-semibold">Pipes Basicos</h1>
+</section>
+<div class="stats stats-vertical lg:stats-horizontal shadow w-full">
+  <div class="stat">
+    <div class="stat-title">LowerCase</div>
+    <div class="stat-value">{{ nameLower() | lowercase }}</div>
+    <!-- <div class="stat-desc">Jan 1st - Feb 1st</div> -->
+  </div>
+
+  <div class="stat">
+    <div class="stat-title">UpperCase</div>
+    <div class="stat-value">{{ nameUpper() | uppercase }}</div>
+    <!-- <div class="stat-desc">↗︎ 400 (22%)</div> -->
+  </div>
+
+  <div class="stat">
+    <div class="stat-title">Title Case</div>
+    <div class="stat-value">{{ fullName() | titlecase }}</div>
+    <!-- <div class="stat-desc">↘︎ 90 (14%)</div> -->
+  </div>
+</div>
+
+<div class="divider"></div>
+<div class="stats stats-vertical lg:stats-horizontal shadow w-full">
+  <div class="stat">
+    <div class="stat-title">Date Pipe</div>
+    <div class="stat-value">{{ customDate() | date }}</div>
+    <!-- <div class="stat-desc">Jan 1st - Feb 1st</div> -->
+  </div>
+
+  <div class="stat">
+    <div class="stat-title">Date |long|GMT-6|</div>
+    <div class="stat-value">{{ customDate() | date: 'short': "GMT-6" }}</div>
+    <!-- <div class="stat-desc">↗︎ 400 (22%)</div> -->
+  </div>
+
+  <div class="stat">
+    <div class="stat-title">Title Case</div>
+    <div class="stat-value">{{ customDate() }}</div>
+    <!-- <div class="stat-desc">↘︎ 90 (14%)</div> -->
+  </div>
+</div>
